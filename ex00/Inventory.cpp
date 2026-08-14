@@ -11,7 +11,7 @@ bool Inventory::remove(const std::string& item) {
             return true;
         }
     }
-    return true;
+    return false;
 }
 
 bool Inventory::has(const std::string& item) const {
