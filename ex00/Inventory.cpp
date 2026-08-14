@@ -15,11 +15,11 @@ bool Inventory::remove(const std::string& item) {
 }
 
 bool Inventory::has(const std::string& item) const {
-    /*for (const auto& i : items_) {
+    for (const auto& i : items_) {
         if (i == item) {
             return true;
         }
-    }*/(void)item;
+    }
     return false;
 }
 
