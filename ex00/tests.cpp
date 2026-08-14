@@ -21,11 +21,11 @@ TEST_CASE("removing an item drops the count and has() stops finding it", "[inven
     inv.add("Shield");
     CHECK(inv.remove("Shield")== true);
     CHECK(inv.has("Shield") == false);
-}/*
+}
 //Cycle 4 (2 assertions)
 TEST_CASE("removing a missing item is a no-op: count unchanged, other items untouched", "[inventory]") {
     Inventory inv;
     inv.add("Sword");
     CHECK(inv.remove("Shield")== false);
     CHECK(inv.count() == 1);
-}*/
+}
