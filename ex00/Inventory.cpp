@@ -1,7 +1,7 @@
 #include "Inventory.hpp"
 
 void Inventory::add(const std::string& item) {
-    (void) items_.push_back(item);
+    (void)item; //items_.push_back(item);
 }
 
 bool Inventory::remove(const std::string& item) {
@@ -24,5 +24,5 @@ bool Inventory::has(const std::string& item) const {
 }
 
 int Inventory::count() const {
-    return static_cast<int>(items_.size());
+    return 0; //static_cast<int>(items_.size());
 }
