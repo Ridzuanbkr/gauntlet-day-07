@@ -1,15 +1,15 @@
-NAME := tests
+NAME     := tests
 
-CXX := c++
+CXX      := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++17
 
-SRCS := Inventory.cpp tests.cpp catch_amalgamated.cpp
-OBJS := $(SRCS:.cpp=.o)
+SRCS     := Inventory.cpp tests.cpp catch_amalgamated.cpp
+OBJS     := $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
