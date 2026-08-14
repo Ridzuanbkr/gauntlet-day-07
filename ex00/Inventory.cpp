@@ -5,13 +5,13 @@ void Inventory::add(const std::string& item) {
 }
 
 bool Inventory::remove(const std::string& item) {
-    /*for (auto it = items_.begin(); it != items_.end(); ++it) {
+    for (auto it = items_.begin(); it != items_.end(); ++it) {
         if (*it == item) {
             items_.erase(it);
             return true;
         }
     }
-    ; */ (void)item; return 0;
+    return false;
 }
 
 bool Inventory::has(const std::string& item) const {
