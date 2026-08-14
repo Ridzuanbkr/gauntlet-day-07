@@ -3,7 +3,7 @@ NAME := tests
 CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++17
 
-SRCS := Inventory.cpp test.cpp catch_amalgamated.cpp
+SRCS := Inventory.cpp tests.cpp catch_amalgamated.cpp
 OBJS := $(SRCS:.cpp=.o)
 
 all: $(NAME)
